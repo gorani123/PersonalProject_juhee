@@ -1,0 +1,25 @@
+-- 샘플 데이터 입력
+
+INSERT INTO TB_FAQ
+VALUES (SQ_FAQ.nextval, '제목', '해결방법', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+INSERT INTO TB_FAQ
+VALUES (SQ_FAQ.nextval, '제목2', '해결방법2', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+INSERT INTO TB_FAQ
+VALUES (SQ_FAQ.nextval, '제목3', '해결방법3', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+INSERT INTO TB_FAQ
+VALUES (SQ_FAQ.nextval, '제목4', '해결방법4', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+
+
+INSERT INTO TB_QNA
+VALUES (SQ_QNA.nextval, '질문', '정연주', '질문있습니다', 'abc@gmail.com', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+INSERT INTO TB_QNA
+VALUES (SQ_QNA.nextval, '질문2', '김지현', '예약하고싶어요', 'sdfe@gmail.com', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+INSERT INTO TB_QNA
+VALUES (SQ_QNA.nextval, '질문3', '금지영', '저번에 얘기한 건 문의드려요', 'apple@gmail.com', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+
+
+-- TITLE, FILE_NAME, TYPE(이미지파일타입), DATA(BLOB), PRICE, ADDRESS, CITY, BED, BATH, DELETE_YN, INSERT_TIME, UPDATE_TIME, DELETE_TIME
+INSERT INTO TB_PROPERTY
+VALUES (SQ_PROPERTY.nextval, 'sample1', '','','','30000','전포2동 342', '부산, 한국', '1', '1', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
+
+COMMIT;
