@@ -23,7 +23,7 @@
                   class="breadcrumb-item active text-white-50"
                   aria-current="page"
                 >
-                  Upload property
+                  User Info
                 </li>
               </ol>
             </nav>
