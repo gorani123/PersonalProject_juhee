@@ -26,11 +26,6 @@ const routes = [
     component: () => import('../components/propertySingleCom.vue')
   },
   {
-    path: '/services',
-    name: 'services',
-    component: () => import('../components/servicesCom.vue')
-  },
-  {
     path: '/addqna',
     name: 'add-qna',
     component: () => import('../components/AddQna.vue')

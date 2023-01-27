@@ -2,6 +2,7 @@ import http from "../http-common";
 import authHeader from "./auth/auth-header";
 
 class UserDataService {
+  
   getAll(username, page, size) {
     return http.get(`/user?username=${username}&page=${page}&size=${size}`, {
       headers: authHeader(),
