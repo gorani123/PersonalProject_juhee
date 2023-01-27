@@ -69,6 +69,35 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 //    테스트 모듈 라이브러리 -> J UNIT
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+
+
+	/////    OAUTH2 라이브러리 추가 : 소셜로그인(구글로그인, 네이버로그인, 카카오로그인)_기본: 구글/페이스북/깃허브
+	//                              SSO(Single Sign On) 간편로그인. 한 번만 로그인하면 됨
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+	// spring securit 라이브러리 -> 감시모드 시작 (인증 안되면 바로 401,402.. 테스트할땐 이거 빼기. 완성후에만 넣기)
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+
+	//    jwt 웹 토큰 설정 라이브러리(json)
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+	//    validation 추가(유효성체크)
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.7'
+
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+	annotationProcessor 'org.projectlombok:lombok'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	//    spring security 테스트 라이브러리
+	testImplementation 'org.springframework.security:spring-security-test'
+
 }
 
 tasks.named('test') {
