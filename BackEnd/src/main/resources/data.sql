@@ -22,4 +22,19 @@ VALUES (SQ_QNA.nextval, '질문3', '금지영', '저번에 얘기한 건 문의�
 INSERT INTO TB_PROPERTY
 VALUES (SQ_PROPERTY.nextval, 'sample1', '','','','30000','전포2동 342', '부산, 한국', '1', '1', 'N', TO_CHAR(SYSDATE, 'YYYY-MM-DD HH24:MI:SS') ,NULL, NULL);
 
+
+
+INSERT INTO TB_ROLE(id, name) VALUES(SQ_ROLE.NEXTVAL, 'ROLE_USER');
+-- INSERT INTO TB_ROLE(id, name) VALUES(SQ_ROLE.NEXTVAL, 'ROLE_MODERATOR');
+INSERT INTO TB_ROLE(id, name) VALUES(SQ_ROLE.NEXTVAL, 'ROLE_ADMIN');
+
+-- admin user 1명 최초 생성
+-- id : forbob
+-- password : 123456
+-- email : forbob@naver.com
+-- roles : ROLE_ADMIN
+INSERT INTO TB_USER VALUES(SQ_USER.NEXTVAL, 'forbob@naver.com','$2a$10$TG1a5ywSrGNgf7/fFH.m0.EdTzHax8AGYNeAr8aIseF3DKyO0lDti','forbob');
+INSERT INTO TB_USER_ROLE VALUES(1, 2);
+
 COMMIT;
+

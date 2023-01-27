@@ -34,7 +34,7 @@ import java.util.Map;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:8080")     // 8080에서 뷰 8081로 바꿈
+@CrossOrigin(origins = "http://localhost:8081")     // 8080에서 뷰 8081로 바꿈
 public class PropertyController {
 
     @Autowired
