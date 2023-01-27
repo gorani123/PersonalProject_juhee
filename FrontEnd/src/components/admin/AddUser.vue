@@ -11,7 +11,6 @@
             <h1 class="heading" data-aos="fade-up">관리자 페이지</h1>
             <h3 class="heading" data-aos="fade-up">Register</h3>
 
-
             <nav
               aria-label="breadcrumb"
               data-aos="fade-up"

@@ -31,183 +31,186 @@
     </div>
     <!-- 상단바양식 끝 -->
 
-
-    
     <div class="section">
-  <div class="container">
-    <div class="row">
-      <div
-        class="col-lg-4 mb-5 mb-lg-0"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <div class="contact-info">
-          <div class="address mt-2">
-            <i class="icon-room"></i>
-            <h4 class="mb-2">Location:</h4>
-            <p>
-              43 Raymouth Rd. Baltemoer,<br />
-              London 3910
-            </p>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-4 mb-5 mb-lg-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="contact-info">
+              <div class="address mt-2">
+                <i class="icon-room"></i>
+                <h4 class="mb-2">Location:</h4>
+                <p>
+                  43 Raymouth Rd. Baltemoer,<br />
+                  London 3910
+                </p>
+              </div>
+
+              <div class="open-hours mt-4">
+                <i class="icon-clock-o"></i>
+                <h4 class="mb-2">Open Hours:</h4>
+                <p>
+                  Sunday-Friday:<br />
+                  11:00 AM - 2300 PM
+                </p>
+              </div>
+
+              <div class="email mt-4">
+                <i class="icon-envelope"></i>
+                <h4 class="mb-2">Email:</h4>
+                <p>info@Untree.co</p>
+              </div>
+
+              <div class="phone mt-4">
+                <i class="icon-phone"></i>
+                <h4 class="mb-2">Call:</h4>
+                <p>+1 1234 55488 55</p>
+              </div>
+            </div>
           </div>
 
-          <div class="open-hours mt-4">
-            <i class="icon-clock-o"></i>
-            <h4 class="mb-2">Open Hours:</h4>
-            <p>
-              Sunday-Friday:<br />
-              11:00 AM - 2300 PM
-            </p>
-          </div>
 
-          <div class="email mt-4">
-            <i class="icon-envelope"></i>
-            <h4 class="mb-2">Email:</h4>
-            <p>info@Untree.co</p>
-          </div>
+          <!-- 매물 업로드 폼 양식 -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <form action="#">
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <label for="propertyTitle" class="form-label"
+                    >Property Title</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="propertyTitle"
+                    required
+                    name="propertyTitle"
+                    placeholder="ex) 해운대 아이파크"
+                    v-model="propertyTitle"
+                  />
+                </div>
+                <div class="col-6 mb-3">
+                  <label for="propertyPrice" class="form-label">Price</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="propertyPrice"
+                    required
+                    name="propertyPrice"
+                    placeholder="ex) 13억 5000"
+                    v-model="propertyPrice"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="propertyAddress" class="form-label"
+                    >Address</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="propertyAddress"
+                    required
+                    name="propertyAddress"
+                    placeholder="ex) 해운대구 마린시티2로 38"
+                    v-model="propertyAddress"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="propertyCity" class="form-label">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="propertyCity"
+                    required
+                    name="propertyCity"
+                    placeholder="ex) 부산광역시"
+                    v-model="propertyCity"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <label for="propertyBed" class="form-label">Bed</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="propertyBed"
+                    required
+                    name="propertyBed"
+                    placeholder="ex) 3 "
+                    v-model="propertyBed"
+                  />
+                </div>
+                <div class="col-12 mb-3">
+                  <div class="mb-4 col-md-3">
+                    <label for="propertyBath" class="form-label">Bath</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="propertyBath"
+                      required
+                      name="propertyBath"
+                      placeholder="ex) 1"
+                      v-model="propertyBath"
+                    />
+                  </div>
 
-          <div class="phone mt-4">
-            <i class="icon-phone"></i>
-            <h4 class="mb-2">Call:</h4>
-            <p>+1 1234 55488 55</p>
-          </div>
-        </div>
-      </div>
-      <!-- 폼 양식 -->
-      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-        <form action="#">
-          <div class="row">
-            <div class="col-6 mb-3">
-              <label for="propertyTitle" class="form-label"
-              >Property Title</label
-            >
-            <input
-              type="text"
-              class="form-control"
-              id="propertyTitle"
-              required
-              name="propertyTitle"
-              placeholder="ex) 해운대 아이파크"
-              v-model="propertyTitle"
-            />
-            </div>
-            <div class="col-6 mb-3">
-              <label for="propertyPrice" class="form-label">Price</label>
-              <input
-                type="text"
-                class="form-control"
-                id="propertyPrice"
-                required
-                name="propertyPrice"
-                placeholder="ex) 13억 5000"
-                v-model="propertyPrice"
-              />
-            </div>
-            <div class="col-12 mb-3">
-              <label for="propertyAddress" class="form-label">Address</label>
-              <input
-                type="text"
-                class="form-control"
-                id="propertyAddress"
-                required
-                name="propertyAddress"
-                placeholder="ex) 해운대구 마린시티2로 38"
-                v-model="propertyAddress"
-              />
-            </div>
-            <div class="col-12 mb-3">
-              <label for="propertyCity" class="form-label">City</label>
-              <input
-                type="text"
-                class="form-control"
-                id="propertyCity"
-                required
-                name="propertyCity"
-                placeholder="ex) 부산광역시"
-                v-model="propertyCity"
-              />
-            </div>
-            <div class="col-12 mb-3">
-              <label for="propertyBed" class="form-label">Bed</label>
-              <input
-                type="number"
-                class="form-control"
-                id="propertyBed"
-                required
-                name="propertyBed"
-                placeholder="ex) 3 "
-                v-model="propertyBed"
-              />
-            </div>
-            <div class="col-12 mb-3">
-              <div class="mb-4 col-md-3">
-                <label for="propertyBath" class="form-label">Bath</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="propertyBath"
-                  required
-                  name="propertyBath"
-                  placeholder="ex) 1"
-                  v-model="propertyBath"
-                />
-            </div>
+                  <!-- 이미지 선택상자 시작 -->
+                  <div class="mb-3 col-md-5">
+                    <label class="btn btn-default p-0">
+                      <!-- <!— 파일 선택상자 —> -->
+                      <input
+                        type="file"
+                        accept="image/*"
+                        ref="file"
+                        @change="selectProperty"
+                      />
+                    </label>
+                  </div>
+                  <!-- 이미지 선택상자 끝 -->
 
-       <!-- 이미지 선택상자 시작 -->
-       <div class="mb-3 col-md-5">
-        <label class="btn btn-default p-0">
-          <!-- <!— 파일 선택상자 —> -->
-          <input
-            type="file"
-            accept="image/*"
-            ref="file"
-            @change="selectProperty"
-          />
-        </label>
-      </div>
-      <!-- 이미지 선택상자 끝 -->
+                  <button
+                    class="btn btn-success btn-sm float-left"
+                    :disabled="!currentProperty"
+                    @click="upload"
+                  >
+                    Upload
+                  </button>
+                  <router-link
+                    to="/buy"
+                    class="btn btn-success btn-sm float-left"
+                    >등록확인</router-link
+                  >
 
-      <button
-      class="btn btn-success btn-sm float-left"
-      :disabled="!currentProperty"
-      @click="upload"
-    >
-      Upload
-    </button>
-    <router-link to="/buy" class="btn btn-success btn-sm float-left"
-    >등록확인</router-link
-  >
-
-         <!-- 미리보기 이미지 시작 -->
-         <div v-if="previewProperty" class="preview">
-          <div>
-            <img
-              width="200"
-              class="preview my-3"
-              :src="previewProperty"
-              alt=""
-            />
-          </div>
-        </div>
-        <!-- 미리보기 이미지 끝 -->
+                  <!-- 미리보기 이미지 시작 -->
+                  <div v-if="previewProperty" class="preview">
+                    <div>
+                      <img
+                        width="200"
+                        class="preview my-3"
+                        :src="previewProperty"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <!-- 미리보기 이미지 끝 -->
 
                   <!-- 서버 에러 메세지가 있을 경우 아래 출력 시작 -->
-                  <div v-if="message" class="alert alert-secondary" role="alert">
+                  <div
+                    v-if="message"
+                    class="alert alert-secondary"
+                    role="alert"
+                  >
                     {{ message }}
                   </div>
                   <!-- 서버 에러 메세지가 있을 경우 아래 출력 끝 -->
                 </div>
-
-                
+              </div>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- /.untree_co-section -->
-
-
   </div>
 </template>
 
@@ -357,7 +360,7 @@ export default {
 </script>
 
 <style>
-.preview{
+.preview {
   width: 200px;
   height: 150px;
 }

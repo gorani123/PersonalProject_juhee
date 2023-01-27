@@ -34,7 +34,6 @@ import javax.persistence.*;
 //    사용법 1) @SQLDelete(sql="update문") : Delete문이 실행되지 않고 매개변수의 update문이 실행됨
 //    사용법 2) @Where(clause="강제조건") : 대상 클래스(현재 엔티티)에서 sql문 실행 시 강제조건이 붙어 실행됨(DELETE_YN='N' 인 것만 검색)
 
-
 //    no -> no / dname -> title / loc -> content
 
 @Entity

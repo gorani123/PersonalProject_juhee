@@ -36,7 +36,6 @@
     <div class="section">
       <div class="container">
         <div class="row">
-          <!-- TODO: select 박스 넣어서 Title/Price/City 로 검색 ***-->
           <!-- 갤러리 검색 시작 -->
           <div class="d-flex justify-content-end">
             <div class="input-group mb-3">
@@ -116,8 +115,6 @@
           v-for="(data, index) in property"
           :key="index"
         >
-
-            <!-- <div class="col"> -->
             <div class="property-item mb-30">
               <div class="property-content">
 
@@ -204,7 +201,7 @@ export default {
       // 페이징을 위한 변수 정의
       page: 1, // 현재 페이지
       count: 0, // 전체 데이터 건수
-      pageSize: 6, // 한페이지당 몇개를 화면에 보여줄지 결정하는 변수
+      pageSize: 3, // 한페이지당 몇개를 화면에 보여줄지 결정하는 변수
 
       pageSizes: [3, 6, 9], // select box 에 넣을 기본 데이터
     };
@@ -330,19 +327,24 @@ export default {
 }
 
 
+/* 매물 하나씩 카드로 나오도록 */
+.property-item {
+  width: 400px;
+  height: 500px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .property-content{
   width: 400px;
   height: 500px;
 }
 
-
-/* 매물 하나씩 카드로 나오도록 */
-.property-item {
-  width: 400px;
-  height: 600px;
+/* 매물사진크기 */
+.img-thumbnail {
+  width: 300px;
+  height: 200px;
 }
-
-
 
 /* 이미지 사진 크기 조정 중*** */
 /* .box {  */
